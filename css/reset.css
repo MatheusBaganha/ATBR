@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background: linear-gradient(90deg, #F4F6FF, #dee1ee); 
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+strong {
+  color: #000628;
+}

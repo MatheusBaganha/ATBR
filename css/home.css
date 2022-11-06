@@ -64,6 +64,7 @@
 
 .imagemContainer {
   max-width: 400px;
+  margin-top: 92px;
 }
 
 .imagemContainer2, .imagemContainer3 {
@@ -81,30 +82,73 @@
   display: block;
 }
 
+@media (max-width: 1174px) {
+  .container {
+    justify-content: space-evenly;
+    gap: 0 64px;
+    margin: 92px 32px 0px 32px;
+  }
+  
+  .titulo {
+    font-size: 1.6rem;
+  }
+  
+  .botao {
+    font-size: 1rem;
+  }
+  
+  .resumoATBR p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .titulo {
+    font-size: 1.5rem;
+  }
+  
+  .botao {
+    font-size: 0.9rem;
+  }
+  
+  .resumoATBR p {
+    font-size: 0.9rem;
+  }
+
+  .imagemContainer {
+    max-width: 380px;
+    margin-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     gap: 36px 0;
-    padding: 16px;
+    padding: 16px 6px;
     margin-top: 92px;
     flex-direction: column;
   }
   
   .titulo {
-    font-size: 1.8rem;
     margin-bottom: 16px;
   }
   
   .botao {
-    padding: 12px 32px;
-    font-size: 1.1rem;
+    width: 130px;
+    height: 46px;
+    padding: 12px 14px;
+    font-size: 0.8rem;
   }
-  
-  .resumoATBR p {
-    font-size: 1.1rem;
-  }
-  
+
   .imagemContainer {
-    max-width: 300px;
-    margin-top: 64px;
+    max-width: 280px;
   }
 }

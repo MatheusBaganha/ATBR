@@ -57,3 +57,62 @@
 .matricula:hover {
   background-color: #474b6d;
 }
+
+@media (max-width: 1174px) {
+  .containerBoxs {
+    margin: 92px auto;
+    gap: 32px 128px;
+  }
+  
+  .cursosItens {
+    gap: 12px 0;
+    font-size: 1rem;
+    /* width: 80vw; */
+  }
+  
+  .nomeCurso {
+    font-size: 1.8rem;
+  }
+
+  .imagemContainer2 {
+    display: none;
+}
+
+  .tituloCursos {
+    margin-top: 64px;
+  }
+
+  .tituloCursos ~ p {
+    margin-bottom: -32px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .containerBoxs {
+    margin: 64px -18px -32px -18px;
+    gap: 32px 0px;
+  }
+  
+  .cursosItens {
+    gap: 6px 0;
+    font-size: 0.9rem;
+  }
+  
+  .nomeCurso {
+    font-size: 1.5rem;
+  }
+
+  .tituloCursos ~ p {
+    margin-bottom: -32px;
+    font-size: 0.8rem;
+  }
+
+  .matricula {
+    padding: 8px 32px;
+    width: 180px;
+    height: 36px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+  }
+}

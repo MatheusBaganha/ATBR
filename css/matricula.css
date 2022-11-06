@@ -6,6 +6,9 @@
 
 form {
   margin-top: 64px;
+  max-width: 400px;
+  height: max-content;
+  box-sizing: border-box;
 }
 
 .containerImagemForm {
@@ -20,14 +23,15 @@ form {
   background-color: #F1F1F1;
   border: 1px solid #f8f8f8;
   box-shadow: 0 6px 6px rgba(0, 0, 0, .10);
-  max-width: max-content;
+  max-width: 400px;
   padding: 16px 32px;
   border-radius: 3px;
+  position: relative;
   border-radius: 0 0 3px 3px;
 }
 
 .paragrafoMatricula {
-  width: 80ch;
+  max-width: 60ch;
   margin-bottom: 36px;
 }
 
@@ -44,7 +48,7 @@ label:first-child {
 input {
   height: 36px;
   font-size: 1rem;
-  border: 1px solid #dfdfdf;
+  border: 2px solid #dfdfdf;
   border-radius: 3px;
   background-color: #ebebeb;
   box-shadow: 0 4px 4px rgba(0, 0, 0, .10);
@@ -63,10 +67,13 @@ input:hover, input:active {
   background-color: #1a1f49;
   color: #F1F1F1;
   font-size: 1.1rem;
-  width: 405px;
+  width: 400px;
   box-sizing: border-box;
   padding: 6px 12px;
   border-radius: 3px 3px 0 0;
+  position: absolute;
+  top: -40px;
+  left: 0;
 }
 
 label {
@@ -100,12 +107,117 @@ label {
   margin: 12px auto 18px 0;
   padding: 8px 32px;
   cursor: pointer;
-  border: 1px solid #1a1f49;
+  border: 2px solid #1a1f49;
   outline: none;
   font-size: 1.1rem;
   border-radius: 4px;
 }
 
 .submit:hover {
-  width: 150px;
+  width: 148px;
+}
+
+@media (max-width: 1174px) {
+  .imagemContainer3 {
+    display: none;
+  }
+}
+
+@media (max-width: 930px) {
+  .containerMatricula {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 0px;
+    margin: 148px 32px 0px 32px;
+  }
+
+  .paragrafoMatricula {
+    display: inline-block;
+    margin-bottom: 64px;
+  }
+
+  form {
+    margin: 32px auto;
+  }
+  
+  .containerImagemForm {
+    margin: 0 auto;
+  }
+  
+  .formularioItems {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 590px) {
+  form {
+    margin: 32px -32px;
+    width: 280px;
+  }
+
+  .containerMatricula {
+    margin: 148px 32px 0px 32px;
+  }
+
+  .containerImagemForm, .formularioItems {
+    margin: 0 auto;
+  }
+
+  label, input, .submit, .tituloForm {
+    display: block;
+    width: 200px;
+    margin-left: 0;
+  }
+  
+  label:first-child {
+    margin-top: 18px;
+  }
+  
+  input {
+    height: 36px;
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+  
+  .tituloForm {
+    font-size: 1.1rem;
+    width: 280px;
+    padding: 6px 12px;
+  }
+  
+  label {
+    font-size: 1rem;
+  }
+  
+  .containerTermos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 16px;
+  }
+  
+  .inputTermos {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .termosLabel {
+    font-size: 0.7rem;
+    top: 2px;
+  }
+  
+  .submit {
+    width: 108px;
+    margin: 12px auto 18px 0;
+    padding: 8px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .paragrafoMatricula {
+    display: inline-block;
+    max-width: 40ch;
+  }
 }

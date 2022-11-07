@@ -39,6 +39,12 @@
   display: none;
 }
 
+@media(max-width: 1070px) {
+  .icone a {
+    margin-left: -36px;
+  }
+}
+
 @media (max-width: 480px) {
   .header {
     flex-wrap: wrap;
@@ -47,6 +53,7 @@
   
   .icone a {
     font-size: 2.2rem;
+    margin-left: 25px;
   }
   
   .ulLista {
@@ -60,13 +67,6 @@
 }
 
 @media (max-width: 768px) {
-  @keyframes moveUp {
-    to {
-      opacity: 0;
-      height: 0;
-      visibility: hidden;
-    }
-  }
 
   .ulLista {
     display: flex;
@@ -133,11 +133,9 @@
   .nav.active .menuMobileBtn::before {
     rotate: 135deg;
   }
-
   
   .nav.active .menuMobileBtn::after {
     rotate: -135deg;
     top: -9px;
-    
   }
 }

@@ -7,7 +7,6 @@
   padding: 16px 92px;
   background-image: linear-gradient(90deg,#23476b, #1e3d5b);
   max-height: 64px;
-
 }
 
 .icone a {
@@ -40,38 +39,18 @@
 }
 
 @media(max-width: 1070px) {
-  .icone a {
+  .header .icone a {
     margin-left: -36px;
   }
 }
 
-@media (max-width: 480px) {
-  .header {
-    flex-wrap: wrap;
-    padding: 16px;
-  }
-  
-  .icone a {
-    font-size: 2.2rem;
-    margin-left: 25px;
-  }
-  
-  .ulLista {
-    gap: 12px;
-    margin-top: 16px;
-  }
-  
-  .listaItem {
-    font-size: 1.1rem;
-  }
-}
+
 
 @media (max-width: 768px) {
-
   .ulLista {
     display: flex;
     flex-direction: column;
-    background-color: #23476b;
+    background-image: linear-gradient(90deg,#23476b, #1e3d5b);
     gap: 0px;
     position: absolute;
     top: 66px;
@@ -94,10 +73,11 @@
     display: block;
     margin-bottom: 18px;
     position: relative;
-    left: 88px;
+    left: 57px;
+    top: 18px;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     padding-bottom: 16px;
-    width: 80vw;
+    width: 100vw;
     height: max-content
   }
 
@@ -137,5 +117,30 @@
   .nav.active .menuMobileBtn::after {
     rotate: -135deg;
     top: -9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+  
+  .header .icone a {
+    font-size: 2.2rem;
+    margin-left: 25px;
+  }
+  
+  .ulLista {
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .listaItem {
+    left: 42px;
+  }
+  
+  .listaItem {
+    font-size: 1.1rem;
   }
 }

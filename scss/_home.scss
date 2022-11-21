@@ -1,13 +1,15 @@
 .container {
-  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 16px;
-  margin: 92px auto 0px 68px;
+  margin: 92px 32px 0px 32px;
 }
 
 .imagemContainer {
   margin-top: 164px;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 @media(min-width: 1294px) {
@@ -96,9 +98,9 @@
   display: block;
 }
 
-@media (max-width: 1174px) {
+@media (max-width: 1293px) {
   .container {
-    justify-content: space-evenly;
+    justify-content: flex-start;
     gap: 0 64px;
     margin-left: 68px;
     margin-right: 68px;

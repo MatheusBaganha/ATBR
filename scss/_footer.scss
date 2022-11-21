@@ -14,7 +14,7 @@
   left: -128px;
 }
 
-.footer > .icone {
+.footer .icone  a {
   margin-top: 16px;
 }
 
@@ -57,9 +57,10 @@
     left: 16px;
   }
   
-  .footer > .icone {
-    margin-bottom: 36px;
-    margin-left: 16px;
+  .footer .icone a {
+    display: block;
+    margin-left: 6px;
+    margin-bottom: 32px;
   }
   
   .ulContatos , .footerEndereco {

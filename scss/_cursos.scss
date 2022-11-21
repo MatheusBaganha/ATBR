@@ -60,14 +60,14 @@
 
 @media (max-width: 1174px) {
   .containerBoxs {
-    margin: 92px auto;
-    gap: 32px 128px;
+    justify-content: center;
+    margin: 92px auto 0 auto;
+    gap: 36px 128px;
   }
   
   .cursosItens {
     gap: 12px 0;
     font-size: 1rem;
-    /* width: 80vw; */
   }
   
   .nomeCurso {
@@ -87,16 +87,14 @@
   }
 }
 
-
 @media (max-width: 480px) {
   .containerBoxs {
-    margin: 64px -18px -32px -18px;
-    gap: 32px 0px;
+    margin: 64px auto -32px auto;
   }
-  
+
   .cursosItens {
     gap: 6px 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   
   .nomeCurso {
@@ -105,7 +103,7 @@
 
   .tituloCursos ~ p {
     margin-bottom: -32px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .matricula {

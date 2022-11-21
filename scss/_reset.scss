@@ -20,3 +20,14 @@ ul {
 strong {
   color: #000628;
 }
+
+[data-animar] p, [data-animar] .containerPergunta {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 1s;
+}
+
+[data-animar] p.show, [data-animar] .containerPergunta.show {
+  opacity: 1;
+  transform: translateY(0);
+}

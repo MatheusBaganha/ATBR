@@ -16,29 +16,29 @@
 <body>
   <header class="header">
     <div class="icone">
-      <h1><a href="#">ATBR</a></h1>
+      <h1><a href="#home">ATBR</a></h1>
     </div>
     <nav data-nav class="nav">
       <button data-menuBtn class="menuMobileBtn" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu"></button>
-      <ul id="menu" role="menu" class="ulLista">
-        <li><a class="listaItem" href="#">Home</a></li>
-        <li><a class="listaItem" href="#">Cursos</a></li>
-        <li><a class="listaItem" href="#">Contato</a></li>
+      <ul data-links id="menu" role="menu" class="ulLista">
+        <li><a class="listaItem" href="#home">Home</a></li>
+        <li><a class="listaItem" href="#cursos">Cursos</a></li>
+        <li><a class="listaItem" href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
   <main class="container linha">
-    <article data-animar class="resumoATBR">
+    <article data-links id="home" data-animar class="resumoATBR">
       <h2 class="titulo">QUEM SOMOS?</h2>
       <p>A <strong>ATBR</strong> (Associação de formação tecnológica para pessoas de baixa renda) é uma ONG especializada no desenvolvimento de novos profissionais da tecnologia.<br><br> Ensinamos diversas pessoas de baixa renda a começarem as suas carreiras de T.I sem cobrar nada.</p>
-      <a href="#"><button class="botao">MATRICULE-SE</button></a>
+      <button class="botao"><a href="#contato">MATRICULE-SE</a></button>
     </article>
     <aside class="imagemContainer">
       <img src="imagens/pessoa-codificando.svg" alt="ilustração de pessoa codificando">
     </aside>
   </main>
 
-  <section class="container linha">
+  <section id="cursos" class="container linha">
     <aside class="imagemContainer imagemContainer2">
       <img src="imagens/certificado.svg" alt="ilustração de pessoa com certificado">
     </aside>
@@ -49,23 +49,23 @@
 
     <ul class="container containerBoxs">
       <li>
-        <article data-animar class="cursosItens">
+        <article data-links data-animar class="cursosItens">
           <h2 class="nomeCurso">Front-End</h2>
           <p>Do iniciante ao avançado</p>
           <p>Presencial e EAD</p>
           <p>Requisitos: Nenhum</p>
           <p>Grade: HTML | CSS | JavaScript</p>
-          <a class="matricula" href="#">Tenho Interesse</a>
+          <a class="matricula" href="#contato">Tenho Interesse</a>
         </article>
       </li>
       <li>
-        <article data-animar class="cursosItens">
+        <article data-links data-animar class="cursosItens">
           <h2 class="nomeCurso">Back-End</h2>
           <p>Do iniciante ao avançado</p>
           <p>Presencial e EAD</p>
           <p>Requisitos: Nenhum</p>
           <p>Grade: Node | MySQL | APIs</p>
-          <a class="matricula" href="#">Tenho Interesse</a>
+          <a class="matricula" href="#contato">Tenho Interesse</a>
         </article>
       </li>
     </ul>
@@ -106,7 +106,7 @@
     </section>
   </section>
 
-  <article class="container containerMatricula">
+  <article id="contato" class="container containerMatricula">
     <article data-animar class="resumoATBR">
       <h2 class="titulo">MATRICULE-SE</h2>
       <p class="paragrafoMatricula">Envie aqui o seu endereço de email para ter acesso a todas as aulas gratuitamente.</p>

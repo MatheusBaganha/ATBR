@@ -27,6 +27,8 @@
 .pergunta {
   font-size: 1.2rem;
   margin-left: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .pergunta::before {
@@ -48,14 +50,40 @@
   height: 30px;
   background-image: url(../svg/expandir-mais.svg);
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 12px;
+  top: 12px;
+  transition: .3s;
+  rotate: 0deg;
 }
 
 .resposta {
+  display: none;
   font-size: 1rem;
   margin-top: 12px;
   margin-left: 28px;
+}
+
+@keyframes Open {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);  
+  }
+}
+
+.abrir {
+  display: block;
+}
+
+.resposta.abrir {
+  animation: Open .6s forwards;
+}
+
+.containerPergunta.abrir > .pergunta::after {
+  transform: rotate(540deg);
 }
 
 @media (max-width: 1174px) {
@@ -76,18 +104,13 @@
   }
 
   .pergunta {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-right: 32px;
   }
   
   .pergunta::before {
     left: 18px;
-    top: 28px;
-  }
-  
-  .pergunta::after {
-    right: 18px;
-    top: 18px;
+    top: 25px;
   }
 
   .resposta {

@@ -1,0 +1,116 @@
+.containerBoxs {
+  gap: 0 128px;
+}
+
+.cursosItens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 300px;
+  height: 366px;
+  gap: 12px 0;
+  padding: 32px;
+  background: linear-gradient(90deg, #F4F6FF, #dee1ee);
+  border: 1px solid rgba(0, 0, 0, .15);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, .10);
+  border-radius: 3px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.nomeCurso {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nomeCurso::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 48px;
+  border-radius: 3px;
+  background-color: #1a1f49;
+  position: absolute;
+  top: 32px;
+  left: -5px;
+}
+
+.nomeCurso ~ p::before {
+  content: url('../svg/positivo.svg');
+  padding-right: 12px;
+}
+
+.matricula {
+  display: block;
+  margin: 16px auto 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 12px 32px;
+  border-radius: 3px;
+  background-color: #1a1f49;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, .10);
+  color: white;
+  transition: 0.3s;
+}
+
+.hoverMatricula:hover {
+  background-color: #474b6d;
+}
+
+@media (max-width: 1174px) {
+  .containerBoxs {
+    justify-content: center;
+    margin: 92px auto 0 auto;
+    gap: 36px 128px;
+  }
+  
+  .cursosItens {
+    gap: 12px 0;
+    font-size: 1rem;
+  }
+  
+  .nomeCurso {
+    font-size: 1.8rem;
+  }
+
+  .imagemContainer2 {
+    display: none;
+}
+
+  .tituloCursos {
+    margin-top: 64px;
+  }
+
+  .tituloCursos ~ p {
+    margin-bottom: -32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerBoxs {
+    margin: 64px -12px -32px -12px;
+  }
+
+  .cursosItens {
+    gap: 6px 0;
+    font-size: 1.1rem;
+  }
+  
+  .nomeCurso {
+    font-size: 1.5rem;
+  }
+
+  .tituloCursos ~ p {
+    margin-bottom: -32px;
+    font-size: 0.9rem;
+  }
+
+  .matricula {
+    padding: 8px 32px;
+    width: 180px;
+    height: 36px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+  }
+}

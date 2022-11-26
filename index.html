@@ -55,7 +55,7 @@
           <p>Presencial e EAD</p>
           <p>Requisitos: Nenhum</p>
           <p>Grade: HTML | CSS | JavaScript</p>
-          <a class="matricula" href="#contato">Tenho Interesse</a>
+          <a class="matricula hoverMatricula" href="#contato">Tenho Interesse</a>
         </article>
       </li>
       <li>
@@ -65,7 +65,7 @@
           <p>Presencial e EAD</p>
           <p>Requisitos: Nenhum</p>
           <p>Grade: Node | MySQL | APIs</p>
-          <a class="matricula" href="#contato">Tenho Interesse</a>
+          <a class="matricula hoverMatricula" href="#contato">Tenho Interesse</a>
         </article>
       </li>
     </ul>
@@ -115,18 +115,18 @@
       <aside class="imagemContainer imagemContainer3">
         <img src="imagens/email.svg" alt="ilustração de email">
       </aside>
-      <form class="" action="">
+      <form data-submit class="" action="">
         <div class="formularioItems">
           <h3 class="tituloForm">RECEBA AS AULAS</h3>
           <label for="nome">Nome: </label>
-          <input class="nome" type="text" name="nome" id="nome">
+          <input data-inputValue="nome" class="nome inputEffect" type="text" name="nome" id="nome">
           <label for="email">Email: </label>
-          <input class="email" type="email" name="email" id="email">
+          <input data-inputValue="email" class="email inputEffect" type="email" name="email" id="email" required>
           <div class="containerTermos">
-            <input class="inputTermos" type="checkbox" name="termo" id="termo">
+            <input data-inputValue="termos" class="inputTermos" type="checkbox" name="termo" id="termo">
             <label class="termosLabel" for="termo">Você concorda que a ATBR poderá lhe enviar e-mails periodicamente?</label>
           </div>
-          <input class="matricula submit" type="submit" value="ENVIAR">
+          <input data-btnSubmit class="matricula submit" type="submit" value="ENVIAR">
         </div>
       </form>
     </div>

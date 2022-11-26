@@ -58,7 +58,7 @@ input {
   border: 2px solid #ebebeb;
 }
 
-input:hover, input:active {
+.inputEffect:hover, .inputEffect:active {
   background-color: #dfdfdf;
   border: 2px solid #3e4aaf;
 }
@@ -96,6 +96,18 @@ label {
   cursor: pointer;
 }
 
+@keyframes Vibrando {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(25deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-25deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.vibrar {
+  animation: Vibrando .5s;
+}
+
 .termosLabel {
   font-size: 0.9rem;
   position: relative;
@@ -105,19 +117,23 @@ label {
 
 .submit {
   font-family: 'Poppins', sans-serif;
-  width: 128px;
+  width: 148px;
   height: auto;
   margin: 12px auto 18px 0;
-  padding: 8px 32px;
+  padding: 8px 20px;
   cursor: pointer;
+  background-color: #1a1f49;
   border: 2px solid #1a1f49;
   outline: none;
   font-size: 1.1rem;
   border-radius: 4px;
+  text-align: center;
+  transition: .6s ease;
 }
 
-.submit:hover {
-  width: 148px;
+.enviado {
+  background-color: #00cc00;
+  border-color: #00b200;
 }
 
 @media (max-width: 1174px) {
@@ -213,8 +229,8 @@ label {
   .submit {
     width: 108px;
     margin: 18px auto 18px 0;
-    padding: 8px 28px;
-    font-size: 0.9rem;
+    padding: 8px 8px;
+    font-size: 0.8rem;
   }
 }
 

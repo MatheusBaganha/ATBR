@@ -15,6 +15,6 @@ export default function scrollSuave() {
   }
 
   linksInternos.forEach((link) => {
-    link.addEventListener('click', handleScroll);
+    link.addEventListener('pointerdown', handleScroll);
   });
 }

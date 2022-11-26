@@ -18,6 +18,6 @@ export default function toggleDuvidas() {
   }
 
   perguntas.forEach((pergunta) => {
-    pergunta.addEventListener('click', togglePergunta);
+    pergunta.addEventListener('pointerdown', togglePergunta);
   });
 }

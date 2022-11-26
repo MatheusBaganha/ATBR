@@ -9,7 +9,7 @@
   max-height: 64px;
 }
 
-.icone a {
+.icone h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #F1F1F1;
@@ -39,7 +39,7 @@
 }
 
 @media(max-width: 1070px) {
-  .header .icone a {
+  .header .icone h1 {
     margin-left: -36px;
   }
 }
@@ -128,7 +128,7 @@
     right: 42px;
   }
 
-  .header .icone a {
+  .header .icone h1 {
     font-size: 2.2rem;
     margin-left: 25px;
   }

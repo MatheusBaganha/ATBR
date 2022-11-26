@@ -3,9 +3,6 @@ export default function menuMobile() {
   const classActive = 'active';
 
   function toggleMenu(event) {
-    if (event.type === 'touchstart') {
-      event.preventDefault();
-    }
     const nav = document.querySelector('[data-nav]');
     nav.classList.toggle(classActive);
 
@@ -18,6 +15,5 @@ export default function menuMobile() {
     }
   }
 
-  menuBtn.addEventListener('click', toggleMenu);
-  menuBtn.addEventListener('touchstart', toggleMenu);
+  menuBtn.addEventListener('pointerdown', toggleMenu);
 }

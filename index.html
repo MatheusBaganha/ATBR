@@ -10,12 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <title>ATBR - Home</title>
+  <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+  <title>ATBR</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="icone">
+  <header id="home" class="header">
+    <div data-links class="icone">
       <h1><a href="#home">ATBR</a></h1>
     </div>
     <nav data-nav class="nav">
@@ -28,7 +29,7 @@
     </nav>
   </header>
   <main class="container linha">
-    <article data-links id="home" data-animar class="resumoATBR">
+    <article data-links data-animar class="resumoATBR">
       <h2 class="titulo">QUEM SOMOS?</h2>
       <p>A <strong>ATBR</strong> (Associação de formação tecnológica para pessoas de baixa renda) é uma ONG especializada no desenvolvimento de novos profissionais da tecnologia.<br><br> Ensinamos diversas pessoas de baixa renda a começarem as suas carreiras de T.I sem cobrar nada.</p>
       <button class="botao"><a href="#contato">MATRICULE-SE</a></button>
@@ -133,8 +134,8 @@
   </article>
 
   <footer class="footer">
-    <div class="icone">
-      <h1><a href="#">ATBR</a></h1>
+    <div data-links class="icone">
+      <h1><a href="#home">ATBR</a></h1>
     </div>
 
     <article class="footerContatos">

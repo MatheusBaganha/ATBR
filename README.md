@@ -1,4 +1,4 @@
-# README - ATBR Landing Page
+# ATBR Landing Page
 
 Este projeto é uma landing page da ONG ATBR, cujo objetivo é ajudar na formação de novos programadores, com foco na educação de pessoas de baixa renda.
 
